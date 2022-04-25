@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Wiki</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: #1a759f;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #3d405b;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="top">CSS</h1>
+    <hr>
+    <p class="redirect__resource">
+        From Wikipedia, the free encyclopedia <br>
+        <small style="margin-left: 15px;">(Redirected from <a href="https://en.wikipedia.org/w/index.php?title=Cascading_Style_Sheets&redirect=no" target="_blank">Cascading Style Sheets</a>)</small>
+    </p>
+    <p class="more links" style="margin-left: 15px; line-height: 23px;">
+        <em>"Pseudo-element" redirects here. For pseudoelement symbols in chemistry, see <a href="https://en.wikipedia.org/wiki/Skeletal_formula#Pseudoelement_symbols" target="_blank">Skeletal formula § Pseudoelement symbols.</a></em><br>
+        <em>For the use of CSS on Wikipedia, see <a href="https://en.wikipedia.org/wiki/Help:Cascading_Style_Sheets" target="_blank">Help:Cascading Style Sheets.</a></em><br>
+        <em>For other uses, see <a href="https://en.wikipedia.org/wiki/CSS_(disambiguation)" target="_blank">CSS (disambiguation)</a></em><br>
+    </p>
+    <p class="definition">
+        <b>Cascading Style Sheets (CSS)</b> is a 
+        <a href="https://en.wikipedia.org/wiki/Style_sheet_language" target="_blank">style sheet language</a> 
+        used for describing the <a href="https://en.wikipedia.org/wiki/Presentation_semantics" target="_blank">presentation</a> of a document written in a <a href="https://en.wikipedia.org/wiki/Markup_language" target="_blank">markup language</a> such as 
+        <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a>. 
+        <a href="https://en.wikipedia.org/wiki/CSS#cite_note-1" target="_blank"><sup>[1]</sup></a> 
+        CSS is a cornerstone technology of the 
+        <a href="https://en.wikipedia.org/wiki/World_Wide_Web" target="_blank">World Wide Web</a>, alongside HTML and 
+        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>.<a href="https://en.wikipedia.org/wiki/CSS#cite_note-2" target="_blank"><sup>[2]</sup></a>
+    </p>
+    <p class="about_css1">
+        CSS is designed to enable the separation of presentation and content, including 
+        <a href="https://en.wikipedia.org/wiki/Page_layout" target="_blank">layout</a>, 
+        <a href="https://en.wikipedia.org/wiki/Color" target="_blank">colors</a>, and 
+        <a href="https://en.wikipedia.org/wiki/Typeface" target="_blank">fonts</a>.<a href="https://en.wikipedia.org/wiki/CSS#cite_note-3" target="_blank"><sup>[3]</sup></a>
+        This separation can improve content <a href="https://en.wikipedia.org/wiki/Accessibility" target="_blank">accessibility</a>; provide more flexibility and control in the specification of presentation characteristics; enable multiple <a href="https://en.wikipedia.org/wiki/Web_page" target="_blank">web pages</a> to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be <a href="https://en.wikipedia.org/wiki/Cache_(computing)" target="_blank">cached</a> to improve the page load speed between the pages that share the file and its formatting.
+    </p>
+    <p class="about_css2">
+        Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or <a href="https://en.wikipedia.org/wiki/Screen_reader" target="_blank">screen reader</a>), and on <a href="https://en.wikipedia.org/wiki/Braille_display" target="_blank">
+            Braille-based   
+        </a> tactile devices. CSS also has rules for alternate formatting if the content is accessed on a <a href="https://en.wikipedia.org/wiki/Mobile_device" target="_blank">mobile device</a>. <a href="https://en.wikipedia.org/wiki/CSS#cite_note-4"><sup>[4]</sup></a>
+    </p>
+    <p class="about_css3">
+        The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
+    </p>
+    <p class="about_css4">
+        The CSS specifications are maintained by the 
+        <a href="https://en.wikipedia.org/wiki/World_Wide_Web_Consortium" target="_blank">World Wide Web Consortium</a> (W3C). Internet media type (<a href="https://en.wikipedia.org/wiki/MIME_media_type" target="_blank">MIME type</a>) 
+        <code style="border: solid #eaecf0 1px; border-radius:2px; padding: 1px 4px; background-color: #f8f9fa;">text/css</code> 
+        is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free <a href="https://en.wikipedia.org/wiki/W3C_Markup_Validation_Service#CSS_validation" target="_blank">CSS validation service</a> for CSS documents.<a href="https://en.wikipedia.org/wiki/CSS#cite_note-5" target="_blank"><sup>[5]</sup></a>
+    </p>
+    <p class="about_css5">
+        In addition to HTML, other markup languages support the use of CSS including <a href="https://en.wikipedia.org/wiki/XHTML" target="_blank">XHTML</a>, <a href="https://en.wikipedia.org/wiki/Plain_Old_XML" target="_blank">plain XML</a>,<a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics" target="_blank">SVG</a>, and <a href="https://en.wikipedia.org/wiki/XUL" target="_blank">XUL</a>.
+    </p>
+
+    <div class="navigation" style="border: solid #000 1px; background-color: #f8f9fa; width: 30%;">
+
+        <h4 id="nav__content" style="margin:25px">Contents</h4>
+
+        <ul class="navigation__list">
+            <li> 
+                <a href="https://en.wikipedia.org/wiki/CSS#Syntax">1 Syntax</a>
+            </li>
+                <ul>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/CSS#Selector">1.1 Selector</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/CSS#Declaration_block">1.2 Declaration block</a>
+                    </li>
+                        <ul>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/CSS#Length_units">1.2.1 Length units</a>
+                            </li>
+                        </ul>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/CSS#Use">1.3 Use</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/CSS#Sources">1.4 Sources</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/CSS#Specificity">1.5 Specificity</a>
+                    </li>
+                        <ul>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/CSS#Examples">1.5.1 Examples</a>
+                            </li>
+                        </ul>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/CSS#Inheritance">1.6 Inheritance</a>
+                    </li>
+                        <ul>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/CSS#Example">1.6.1 Example</a>
+                            </li>
+                        </ul>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/CSS#Whitespace">1.7 Whitespace</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/CSS#Positioning">1.8 Positioning</a>
+                    </li>
+                        <ul>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/CSS#Position_property">1.8.1 Position property</a>
+                            </li>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/CSS#Float_and_clear">1.8.2 Float and clear</a>
+                            </li>
+                        </ul>
+                </ul>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/CSS#History">2 History</a>
+            </li>
+                <ul>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/CSS#Difficulty_with_adoption">2.1 Difficulty with adoption</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/CSS#Vendor_prefixes">2.2 Vendor prefixes</a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/CSS#Variations">2.3 Variations</a>
+                    </li>
+                        <ul>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/CSS#CSS_1">2.3.1 CSS 1</a>
+                            </li>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/CSS#CSS_2">2.3.2 CSS 2</a>
+                            </li>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/CSS#CSS_2.1">2.3.3 CSS 2.1</a>
+                            </li>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/CSS#CSS_3">2.3.4 CSS 3</a>
+                            </li>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/CSS#CSS_4">2.3.5 CSS 4</a>
+                            </li>
+                        </ul>
+                </ul>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/CSS#Browser_support">3 Browser support</a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/CSS#Limitations">4 Limitations</a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/CSS#Advantages">5 Advantages</a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/CSS#Standardization">6 Standardization</a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/CSS#See_also">7 See also</a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/CSS#References">8 References</a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/CSS#Further_reading">9 Further reading</a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/CSS#External_links">10 External links</a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
+<!--
+    H O M E W O R K
+
+    1. Complete nav-list
+    2. Make list order number and list title separate (number=black, title=#1a759f)
+    3. Put all inline styles in <style> tag in <head>
+    4. Syntax Paragpaph without Table
+    (For [edit] links use href="#")
+-->
