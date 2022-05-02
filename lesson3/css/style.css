@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #212529;
+    height: 60px;
+    padding: 0;
+}
+
+.nav_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_list_item {
+    font-size: 1em;
+    float: left;
+}
+
+.nav_list_item > a {
+    text-decoration: none;
+    color: #FFFF; 
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav_list_item > a:hover {
+    background-color: #f9c74f;
+    color: #212529;
+}
+
+a.nav_list_item_active {
+    background-color: #ced4da;
+    color: #212529;
+}
+
+.main_content {
+    margin: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_article {
+    padding: 15px;
+    margin: 15px;
+    border: solid #212529 1px;
+}
+
+.main_article_1 {
+    width: 500px;
+}
+
+.main_article_2 {
+    width: 400px;
+}
+
+.main_article_3 {
+    width: 350px;
+}
+
+.wiki_container {
+    margin: 100px 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:not(.nav_list_item > a) {
+    text-decoration: none;
+    color: #1a759f;
+}
+
+a:hover:not(.nav_list_item > a) {
+    text-decoration: underline;
+}
+
+a:visited:not(.nav_list_item > a) {
+    color: #3d405b;
+}
+
+
+.contact_container {
+    background-color: #212529;
+    text-align: center;
+    padding: 30px;
+    margin: 50px;
+}
+
+.contact_head {
+    color: #FFFF;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form_input,
+.form_textarea {
+    display: block;
+    color: #023047;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    width: 400px;   
+}
+
+.form_button {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 15px 40px;
+    font-size: 1.5em;
+    background-color: #f9c74f;
+}
+
+.form_input:focus,
+.form_textarea:focus {
+    transform: scale(1.05, 1.05);
+    transition: all 0.3s ease-out;
+}
+
+.form_button:hover {
+    box-shadow: #ced4da 0 0 15px 5px;
+    transform: scale(1.1, 1.1);
+    transition: all 0.3s ease-out;
+}
+
+footer {
+    background-color: #212529;
+    margin: 0;
+}
+
+footer > p {
+    text-align: center;
+    color: #ced4da;
+}
+
