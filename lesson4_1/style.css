@@ -1,0 +1,49 @@
+.toggle_switch {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.fa-sun {
+    color: #f1c40f;
+}
+
+.fa-ghost {
+    margin-left: 3px;
+    color: #7b2cbf;
+}
+
+.label {
+    background-color: #121212;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35px;
+    height: 13px;
+    padding: 5px;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label .ball {
+    background-color: #fff;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: translateX(-3px);
+    transition: transform 0.5s linear;
+}
+
+.checkbox:checked + .label .ball {
+    background-color: #f1c40f;
+    transform: translateX(18px);
+}
+
