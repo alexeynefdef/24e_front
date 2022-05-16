@@ -9,6 +9,7 @@
         href="https://hofstetter-melk.ch/wp-content/uploads/2020/11/png-clipart-computer-icons-person-user-spark-icon-people-share-icon-thumbnail.png"
         type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/16f9cd2e46.js" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 
@@ -25,11 +26,24 @@
                 <a href="./grid.html">Grid</a>
             </li>
             <li class="nav_list_item">
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
+            </li>
+            <li class="nav_list_item logout">
+                <a href="./login.html">Logout</a>
+            </li>
+            <li class="nav_list_item toggle">
+                <div class="toggle_switch">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label for="chk" class="label">
+                        <i class="fa-solid fa-ghost"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
             </li>
         </ul>
     </header>
-
+    
     <div class="wiki_container">
         <h1 id="top">CSS</h1>
         <hr>
@@ -194,12 +208,12 @@
     </div>
 
     <div class="contact_container">
-        <h2 class="contact_head">Contact with us!</h2>
+        <h2 class="contact_head" id="contact">Contact with us!</h2>
         <form id="contact_form" class="form">
-            <input type="email" class="form_input" placeholder="E-mail">
-            <input type="text" class="form_input" placeholder="Name">
-            <textarea class="form_textarea" placeholder="Message"></textarea>
-            <button class="form_button" type="button">Send</button>
+            <input id="email" type="email" class="form_input" placeholder="E-mail">
+            <input id="name" type="text" class="form_input" placeholder="Name">
+            <textarea id="message" class="form_textarea" placeholder="Message"></textarea>
+            <button id="form_button" class="form_button" type="button">Send</button>
         </form>
     </div>
 
@@ -207,11 +221,12 @@
         <p>
             @Telran
             <br>
-            All rights reserver
+            All rights reserved
             <br>
             Berlin 2022
         </p>
     </footer>
+    <script src="./script/index.js"></script>
 </body>
 
 </html>
@@ -220,11 +235,8 @@
 
     HOMEWORK
 
-    1. Put Wiki into index.html
-    2. Complete flex.html with content
-    3. Research about:
-        - transition
-        - transform
-        - :hover :focus ...
-        
+    1. Complete body.dark css
+    2. Implement logout for all pages
+    3. Responsive @media for login page + *Pied Piper responsive
+
 -->

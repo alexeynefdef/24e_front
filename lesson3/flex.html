@@ -9,6 +9,8 @@
         href="https://hofstetter-melk.ch/wp-content/uploads/2020/11/png-clipart-computer-icons-person-user-spark-icon-people-share-icon-thumbnail.png"
         type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/16f9cd2e46.js" crossorigin="anonymous"></script>
+    
     <title>Home</title>
 </head>
 
@@ -27,9 +29,19 @@
             <li class="nav_list_item">
                 <a href="#">Contact</a>
             </li>
+            <li class="nav_list_item toggle">
+                <div class="toggle_switch">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label for="chk" class="label">
+                        <i class="fa-solid fa-ghost"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </li>
         </ul>
     </header>
-
+    <script src="./script/index.js"></script>
     <div class="main_content">
         <article class="main_article main_article_1">
             <h3 class="main_article_head">
@@ -57,6 +69,16 @@
         </article>
     </div>
 
+    <div class="contact_container">
+        <h2 class="contact_head">Contact with us!</h2>
+        <form id="contact_form" class="form">
+            <input type="email" class="form_input" placeholder="E-mail">
+            <input type="text" class="form_input" placeholder="Name">
+            <textarea class="form_textarea" placeholder="Message"></textarea>
+            <button class="form_button" type="button">Send</button>
+        </form>
+    </div>
+
     <footer>
         <p>
             @Telran
@@ -66,6 +88,10 @@
             Berlin 2022
         </p>
     </footer>
+
+    <script>
+
+    </script>
 </body>
 
 </html>
