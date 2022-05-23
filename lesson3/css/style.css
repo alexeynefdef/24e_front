@@ -26,6 +26,30 @@ header {
     background-color: #212529;
     height: 60px;
     padding: 0;
+    z-index: 999;
+}
+
+.navigation {
+    border: solid #000 1px; 
+    background-color: #f8f9fa; 
+    width: 30%;
+}
+
+.dark .navigation {
+    background-color: #212529;
+    border-color: #f1c40f;
+}
+
+code {
+    border: solid #eaecf0 1px; 
+    border-radius:2px; 
+    padding: 1px 4px; 
+    background-color: #f8f9fa;
+}
+
+.dark code {
+    background-color: #f1c40f;
+    color: black;
 }
 
 .nav_list {
@@ -58,13 +82,16 @@ a.nav_list_item_active {
 }
 
 /*Toggle*/
-.fa-sun {
+.fa-sun,
+.fa-check {
     color: #f1c40f;
 }
 
-.fa-ghost {
+.fa-ghost,
+.fa-x {
     margin-left: 3px;
     color: #7b2cbf;
+    margin-bottom: 2px;
 }
 
 .label {
@@ -156,6 +183,10 @@ ul {
 a:not(.nav_list_item > a) {
     text-decoration: none;
     color: #1a759f;
+}
+
+.dark a:not(.nav_list_item > a) {
+    color: rgba(255, 196, 0, 0.959);
 }
 
 a:hover:not(.nav_list_item > a) {
@@ -318,3 +349,56 @@ footer > p {
 }
 
 /* L O G I N end */
+
+
+/* Settings */
+
+.main_head {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    left: 50%;
+    transform: translate(-3%,-50%);
+}
+
+.main_flex {
+    flex-direction: column;
+    width: 90%;
+    padding: 50px;
+    border: solid 2px #000;
+}
+
+.flex_set > h3 {
+    margin-left: 10px;
+}
+
+.flex_set,
+.main_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+div.flex_set:nth-child(n+4):nth-child(-n+6) {
+    border: #000 solid 1px;
+    background-color: #1a759f;
+    color: #fff;
+}
+
+.flex_set {
+    width: 80%;
+}
+
+
+
+/* Settings end */
+
+/*
+    Homework
+    1. Setting togle make ball green on switch
+    2. Fix toggle size
+    3. Resize iframe (height)
+    4. Integrate Settings into all the pages we have
+    
+*/
